@@ -1,3 +1,4 @@
+/* 화질 개선에 도움이 된다. */
 #include <opencv2/opencv.hpp>
 
 using namespace std;
