@@ -1,8 +1,8 @@
 CPP = g++
 
-CPPSRCS = mat_array.cpp
+CPPSRCS = image_channels.cpp
 
-TARGET = MatArray
+TARGET = ImageChannel
 
 BUILDDIR = buildDir
 
@@ -15,11 +15,13 @@ all: clean createdirs build
 createdirs:
 	$(shell mkdir ${BUILDDIR})
 
-build:$(CPPOBJS)
+build: $(CPPOBJS)
 	$(CPP) -o $(BUILDDIR)/$(TARGET) $^ $(CPPFLAGS)
 
-$(CPPOBJS):$(BUILDDIR)/%.o : %.cpp
+$(CPPOBJS): $(BUILDDIR)/%.o : %.cpp
 	$(CPP) -c $(CPPFLAGS) $< -o $@
 
 clean:
-	rm -rf ${BUILDDIR}
+	rm -rf $(BUILDDIR)
+
+

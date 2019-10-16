@@ -1,14 +1,14 @@
 CPP = g++
 
-CPPSRCS = mat_array.cpp
+CPPSRCS = mixChannel.cpp
 
-TARGET = MatArray
+TARGET = MixChannel
 
 BUILDDIR = buildDir
 
-CPPOBJS = $(addprefix $(BUILDDIR)/, $(CPPSRCS:.cpp=.o))
-
 CPPFLAGS = `pkg-config --cflags --libs opencv3`
+
+CPPOBJS = $(addprefix $(BUILDDIR)/, $(CPPSRCS:.cpp=.o))
 
 all: clean createdirs build
 
