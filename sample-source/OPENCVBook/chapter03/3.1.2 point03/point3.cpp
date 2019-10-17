@@ -19,8 +19,10 @@ int main()
     Point3f pt6 = pt2 * 3.14f;
     /* 객체간 덧셈 및 스칼라 곱 */
     Point3d pt7 = ((Point3d)pt3 + pt4) * 10.f;
-
+    /* pt5 와 pt7의 내적 */
     cout<<"pt4, pt7 dot : "<<pt4.dot(pt7)<<endl;
+    /* pt5 와 pt7의 외적 */
+    cout<<"pt4, pt7 cross : "<<pt4.cross(pt7)<<endl;
     cout<<"pt5 = "<<pt5.x << ", " << pt5.y << ", " << pt5.z << endl;
     cout<<"[pt6] = "<<pt6<<endl;
     cout<<"[pt7] = "<<pt7<<endl;

@@ -20,10 +20,11 @@ int main()
     /* Point 객체에 대한 스칼라 곱 */
     cv::Point2f pt9 = pt6 * 3.14f;
     cv::Point2d pt10 = (pt3 + (cv::Point2d) pt6) * 10;
-
+    /* pt8의 x y 좌표 표현 */
     std::cout << "pt8 = "<< pt8.x << " , " << pt8.y << std::endl;
     std::cout << "[pt9] = " << pt9 << std::endl;
     std::cout << "(pt2 == pt6)" << std::endl;
+    /*pt7 하고pt8을 내적 한다 */
     std::cout << "(pt7 pt8 scalar value : "<< pt7.dot(pt8) << std::endl;
 
     return 0;
