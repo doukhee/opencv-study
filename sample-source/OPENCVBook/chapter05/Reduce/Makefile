@@ -1,8 +1,8 @@
 CPP = g++
 
-CPPSRCS = sortIdx.cpp
+CPPSRCS = reduce.cpp
 
-TARGET = SortIdx
+TARGET = Reduce
 
 BUILDDIR = buildDir
 
@@ -20,6 +20,7 @@ build:$(CPPOBJS)
 
 $(CPPOBJS):$(BUILDDIR)/%.o : %.cpp
 	$(CPP) -c $(CPPFLAGS) $< -o $@
+
 
 clean:
 	rm -rf $(BUILDDIR)

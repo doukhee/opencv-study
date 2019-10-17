@@ -1,8 +1,8 @@
 CPP = g++
 
-CPPSRCS = sortIdx.cpp
+CPPSRCS = sortIdx_rect.cpp
 
-TARGET = SortIdx
+TARGET = SorIdxRect
 
 BUILDDIR = buildDir
 

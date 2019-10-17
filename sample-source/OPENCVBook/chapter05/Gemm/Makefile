@@ -1,8 +1,8 @@
 CPP = g++
 
-CPPSRCS = sortIdx.cpp
+CPPSRCS = gemm.cpp
 
-TARGET = SortIdx
+TARGET = Gemm
 
 BUILDDIR = buildDir
 
