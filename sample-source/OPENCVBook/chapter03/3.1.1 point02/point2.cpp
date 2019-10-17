@@ -2,6 +2,7 @@
 
 int main()
 {
+    /* Point는 x, y 두 개의 값을 가진다 */
     /* int형 Point 좌표 생성 */
     cv::Point_<int> pt1(100, 200);
     /* float형 Point 좌표 생성 */
