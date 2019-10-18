@@ -3,10 +3,12 @@
 using namespace std;
 using namespace cv;
 
+/* 인수로 입력된 부분 행렬의 헤더 정보(부모 크기, 시작 위치, 부분 행렬 크기)를 출력 */
 void print_locateROI(String str, Mat m)
 {
     Size size;
     Point pt;
+    /* 부분 행렬에서 부모 행렬의 크기와 위치를 알려준다 */
     m.locateROI(size, pt);
 
     cout<<"parent size"<<size<<", ";
@@ -25,12 +27,13 @@ int main()
     };
 
     Mat m1(5, 7, CV_32S, data);
+    /* 범위 객체로 행렬 참조 */
     Mat m2 = m1(r1, r2);
     Mat m3 = m1(r1, r1);
-
+    /* 행렬 정보 출력 */
     print_locateROI("m2", m2);
     print_locateROI("m3", m3);
-
+    /* 관심 영역 변경 (부분 행렬에서 관심영역의 크기와 위치를 조정) */
     m2.adjustROI(-1, 1, 2, -1);
     m3.adjustROI(0, -1, -2, 2);
 
