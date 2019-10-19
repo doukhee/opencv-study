@@ -5,10 +5,16 @@ using namespace cv;
 
 int main()
 {
-	Mat image = imread("./color.jpg", IMREAD_COLOR);
+	
+
+	/* 이미지 로드 */
+	Mat image = imread("../image/color.jpg.jpg", IMREAD_COLOR);
+	/* 이밎 예외 처리 */
 	CV_Assert(image.data);
 
+	/* 채널을 저장하기 위한 배열 */
 	Mat bgr[3];
+	/* 3채널 행렬에서 채널 분리 */
 	split(image, bgr);
 
 	imshow("image", image);
