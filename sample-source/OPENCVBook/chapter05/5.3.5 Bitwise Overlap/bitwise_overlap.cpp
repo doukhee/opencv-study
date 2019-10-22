@@ -11,6 +11,10 @@ int main()
 
     CV_Assert(image.data && logo.data);
     /* 로고 영상 이진화 3channel color */
+    /*
+     threshold(InputArray src, OutputArray dst, double thresh, double maxval, int type) 
+     이진화를 통해 배경과 물체를 분리하는 함수 thresh는 분리 하기 위한 값
+     */
     threshold(logo, logo_th, 70, 255, THRESH_BINARY);
     /* 1channel 행렬 3개를 갖는 배열로 분리 */
     split(logo_th, masks);
