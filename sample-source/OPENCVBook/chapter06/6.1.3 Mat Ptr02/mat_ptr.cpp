@@ -10,8 +10,11 @@ int main()
      * 데이터 요소를 반복자를 사용하여 접근이 가능하다.
      * template<typename _Tp> MatIterator_<_Tp> Mat::begin()
      * template<typename _Tp> MatIterator_<_Tp> Mat::end()
+     * 함수의 첫번째 행렬 원소에 반복자 설정 및 반환
+     * 
      * template<typename _Tp> MatConstIterator_<_Tp> Mat::begin()
      * template<typename _Tp> MatConstIterator_<_Tp> Mat::end()
+     * 함수의 마지막 행렬 원소에 행렬 반복자 설정 및 반환
      */
 
     uchar data[] = {
