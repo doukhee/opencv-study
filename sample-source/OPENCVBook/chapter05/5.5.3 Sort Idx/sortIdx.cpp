@@ -9,6 +9,7 @@ int main(int argc, char **argv)
     m1 << 11, 2, 3, 4, 10, 
           6, 10, 15, 9, 7, 
           7, 12, 8, 14, 1;
+    /* 정렬 인덱스 벡터 */
     Mat m_sort_idx1, m_sort_idx2, m_sort_idx3;
     /* 정렬 원소의 원본 좌표 */
     sortIdx(m1, m_sort_idx1, SORT_EVERY_ROW);
