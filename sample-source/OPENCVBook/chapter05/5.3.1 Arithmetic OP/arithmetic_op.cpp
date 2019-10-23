@@ -67,7 +67,6 @@ int main()
      * int dtype
      * 출력 배열의 깊이
      * 
-     * void addWeighted(InputArray src1, double alpha, InputArray src2, double beta, double gamma, OutputArray dst, int dtype = -1)
      * void addWeighted(InputArray src1, double alpha, InputArray src2, double beta, double gemma, OutputArray dst, int dtype = -1)
      * 두 배열의 가중된() 합을 계산한다.
      * 수식:
