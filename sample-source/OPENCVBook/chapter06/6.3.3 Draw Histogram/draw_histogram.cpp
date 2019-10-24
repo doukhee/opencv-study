@@ -30,7 +30,7 @@ void draw_histogram(Mat hist, Mat &hist_img, Size size = Size(256, 200))
      * src 
      * 입력 배열
      * dst 
-     * 입력 배열과 같은 출력 배ㅕㅇㄹ
+     * 입력 배열과 같은 출력 배열
      * alpha
      * 범위 정규화의 경우 정규화 할 표준 값 또는 하위 범위 경계
      * beta
